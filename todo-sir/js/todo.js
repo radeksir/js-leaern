@@ -1,4 +1,27 @@
+// http://embed.plnkr.co/rbpDg4gf0QwgQZGvRMrG
+
+function loadSettings() {
+	$('.todo').html(localStorage.mydata);
+	$('.inp-add').val(localStorage.weight);
+
+
+}
+
+function saveSettings() {
+	localStorage.mydata = $('.todo').html();
+	localStorage.weight = $('.inp-add').val();
+
+
+}
+
 $(document).ready(function(){
+	loadSettings();
+
+	$(window).on('unload', function(){
+		saveSettings();
+		loadSettings();
+	});
+
 	$('.todo').each(function() {
 		var $this = $(this);
 		var $inpAdd = $this.find(".inp-add");
