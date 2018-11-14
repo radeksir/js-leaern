@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="cs">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="Author" content="www.internetove-stranky.eu">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no">
+
+		<title>TODO</title>
+
+		<script type="text/javascript">document.documentElement.className = document.documentElement.className.replace('no-js','js');</script>
+
+		<style>
+			.todo{
+				max-width:500px; margin-left:auto; margin-right:auto; border:1px solid #ddd; padding:40px;
+			}
+			.center{
+				text-align:center;
+			}
+			ul,li{
+				list-style:none; margin:0; padding:0;
+			}
+
+			li{
+				border:1px solid #ddd; margin-top:1px; padding:10px 10px 10px 30px;
+			}
+
+			.js .js-hide{
+				position:absolute; left:-5000px; top:-5000px;
+			}
+
+			.inp-add{
+				width:100%; box-sizing:border-box; padding:10px;
+			}
+
+			.done .text{
+				text-decoration:line-through; color:#aaa;
+			}
+
+			.inp-checkbox{
+				float:left; margin-left:-20px;
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<h1 class="center">
+			TODO list
+		</h1>
+
+		<div class="todo">
+
+
+			<ul class="list">
+				<li class="item"><input type="checkbox" class="inp-checkbox"> <span class="text">asdasd</span> <a href="#" class="btn-remove">Smazat</a></li>
+			</ul>
+
+			<p class="center">
+				<input type="text" class="inp-add" placeholder="Zadejte nové TODO">
+				<button type="submit" class="btn-add js-hide">Přidat nové TODO</button>
+			</p>
+		</div>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/todo.js"></script>
+
+
+	</body>
+</html>
+

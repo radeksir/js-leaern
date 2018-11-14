@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<input type="text" id="idecko">
+
+		<script>
+			const key = 'inputValue';
+			const input = document.getElementById('idecko');
+
+			input.value = localStorage.getItem(key);
+
+			input.addEventListener('change', (e) => {
+				const value = e.currentTarget.value;
+				localStorage.setItem(key, value);
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TODO</title>
+
+	<script src="todo.js"></script>
+	<script>
+
+		document.addEventListener('DOMContentLoaded', function(e) {
+
+			var foo = document.querySelector('.js-todo-list');
+			window.todoInst = new TodoList(foo);
+
+		});
+	</script>
+
+	<style>
+		.js-todo-list__item {
+			display:flex;
+			margin:10px 0;
+		}
+
+		.item {
+			width:100%;
+			max-width:300px;
+		}
+		.item__label {
+			display:flex;
+			flex:1 0 auto;
+		}
+		.item__checkbox {
+			flex:0 0 auto;
+			margin-right:10px;
+		}
+		.item__name {
+			flex:1 0 auto;
+			margin-right:10px;
+		}
+		.item__remove {
+			flex:0 0 auto;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="js-todo-list">
+
+		<form class="js-todo-list__form">
+			<input type="text" class="js-todo-list__inp">
+			<button class="js-todo-list__btn">Přidat</button>
+		</form>
+
+
+		<div class="js-todo-list__list">
+
+		</div>
+
+	</div>
+
+</body>
+</html>
