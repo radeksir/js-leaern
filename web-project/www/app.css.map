@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./www/index.less"],"names":[],"mappings":"AAAA;AACA;AACA","file":"app.css","sourcesContent":["body {\n  background: url(obrazek.jpg) !important;\n}\n"],"sourceRoot":""}

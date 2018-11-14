@@ -1,0 +1,37 @@
+composer create-project nette/web-project
+
+php -S 0.0.0.0:8765 -t www
+
+npm init -y
+
+
+npm install naja --save
+
+npm install --save-dev webpack
+
+npm install --save-dev webpack-cli
+
+
+npm  run build
+ybuilduje u6 do app.js
+
+
+
+
+
+
+
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+npm install --save @babel/polyfill
+npm install --save-dev babel-loader
+
+npx browserslist
+vypíše co obsahuje browser
+
+dokumenatce ke všem balíčkům na npm.org
+
+
+links
+https://webpack.js.org/
+https://webpack.js.org/guides/getting-started/
+babeljs.io
